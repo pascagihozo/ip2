@@ -1,0 +1,14 @@
+nav{
+    background-color: black;
+}
+
+.navLogo{
+    margin-left: 40px;
+}
+
+.navLinks{
+    display: flex;
+    margin-right: 40px;
+    margin-left: 400px;
+    gap: 70px;
+}
