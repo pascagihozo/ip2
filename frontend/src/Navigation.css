@@ -12,3 +12,7 @@ nav{
     margin-left: 750px;
     gap: 70px;
 }
+
+footer p{
+    text-align: center;
+}

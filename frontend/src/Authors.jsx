@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import Navigation from './Navigation';
 import './Authors.css';
+import Footer from './Footer';
 
 const Authors = () =>{
 
@@ -218,6 +219,8 @@ return(
      </div> 
    </div>
       )}
+
+<Footer />
    </div>
 );
 };
