@@ -24,6 +24,7 @@ return(
         <div className = "navLinks">
             <Link to  = "/">Home</Link>
             <Link to  = "/authors">Authors</Link>
+            <Link to  = "/contactUs">Contact Us</Link>
             <div className="dropdown">
                 <div className = "dropdownToggle" onClick={toggleDropdown}>Visualization 
                 {showDropdown ? <span className = "arrowHead">&#x25B2;</span>: <span className = "arrowHead">&#x25BC;</span>}</div>

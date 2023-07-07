@@ -39,6 +39,7 @@ import React from 'react';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import Home from './Home';
 import Authors from './Authors';
+import ContactUs from './ContactUs';
 
 const App = () =>{
 
@@ -47,6 +48,7 @@ const App = () =>{
       <Routes>
         <Route path ="/" element={<Home/>} />
         <Route path ="/authors" element={<Authors/>} />
+        <Route path ="/contactUs" element={<ContactUs/>} />
       </Routes>
     </Router>
   )
