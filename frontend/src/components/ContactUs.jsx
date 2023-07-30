@@ -1,12 +1,12 @@
 import React from 'react';
-import './ContactUs.css';
+// import './ContactUs.css';
 import Navigation from './Navigation';
 import Footer from './Footer';
 
 const ContactUs = () => {
     return(
 
-       <div className='container'>
+       <div className='contaicontainer bg-black text-white rounded-lg'>
              <Navigation />
 
                 <div className='ContactUs'>
