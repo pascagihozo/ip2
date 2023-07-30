@@ -1,21 +1,31 @@
-import React from 'react';
-import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
-import Home from './components/Home';
-import Authors from './components/Authors';
-import ContactUs from './components/ContactUs';
+import { BrowserRouter } from "react-router-dom";
+import Authors from "./components/Authors";
+import Visualization from "./components/Visualization";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import ContactUs from "./components/ContactUs";
+import Sources from "./components/Sources";
+import Footer from "./components/Footer";
 
-const App = () =>{
+const App = () => {
+  return (
+    // <BrowserRouter>
+    <div className="relative bg-dark">
+      {/* <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center"> */}
+      <Header />
+      <div className="mt-16">
+        <Home />
+        {/* </div> */}
+        <ContactUs />
+        <Authors />
+        <Sources />
+        <Visualization />
+      </div>
+      <Footer />
+    </div>
 
-  return(
-    <Router>
-      <Routes>
-        <Route path ="/" element={<Home/>} />
-        <Route path ="/authors" element={<Authors/>} />
-        <Route path ="/contactUs" element={<ContactUs/>} />
-      </Routes>
-    </Router>
-  )
-
+    // </BrowserRouter>
+  );
 };
 
 export default App;
