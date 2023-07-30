@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import { Link } from 'react-router-dom';
-import './Navigation.css';
+// import './Navigation.css';
 
 
 const Navigation = () =>{
@@ -30,7 +30,7 @@ return(
                 {showDropdown ? <span className = "arrowHead">&#x25B2;</span>: <span className = "arrowHead">&#x25BC;</span>}</div>
                 {showDropdown && (
                     <div className="dropdownMenu">
-                    <Link to ="/visualization/pageOne">Page One</Link>
+                    <Link to ="/visualization">Visualization1</Link>
                         <Link to ="/visualization/pageTwo">Page Two</Link>
                         <Link to ="/visualization/pageThree">Page Three</Link>
                     </div>

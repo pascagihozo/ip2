@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import './Navigation.css';
+// import './Navigation.css';
 
 const Footer = () =>{
     return(
