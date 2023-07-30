@@ -1,14 +1,9 @@
-import React, { useState} from 'react';
-import { Link } from 'react-router-dom';
-import Navigation from './Navigation';
+import React from 'react'
 
-const Home = () =>{
- return(
-    <><Navigation /><div className="welcome">welcome</div></>
- )
+const Home = () => {
+  return (
+    <div>Hero</div>
+  )
+}
 
-
-
-};
-
-export default Home;
+export default Home
