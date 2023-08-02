@@ -1,9 +1,25 @@
-
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 const Header = () => {
   return (
-    <div className='fixed top-0 z-10 bg-slate-800 w-full p-4'>Power6</div>
-  )
-}
+    <Navbar expand="lg" bg="dark" data-bs-theme="dark" className="fixed-top">
+      <Container fluid className="p-4">
+        <Navbar.Brand href="#home">Power6</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#autho">Authors</Nav.Link>
+            <Nav.Link href="#datas">Data source</Nav.Link>
+            <Nav.Link href="#vis">visualization</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};
 
-export default Header
+export default Header;
