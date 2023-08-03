@@ -17,9 +17,9 @@ import VictoryComponent from "./components/authorscomponents/VictoryComponent";
 import Work from "./components/Work";
 import Visuals from "./components/visuals";
 import AuthorComponent from "./components/authorscomponents/AuthorComponent";
+import VisualsHomePage from "./components/VisualsHomePage";
 
 const App = () => {
-
   const usersArray = [
     {
       userName: "Harry",
@@ -45,7 +45,7 @@ const App = () => {
                     Cumque reiciendis eius autem eveniet mollitia, at asperiores
                     suscipit quae similique laboriosam iste minus placeat odit
                     velit quos, nulla architecto amet voluptates?
-      `
+      `,
     },
     {
       userName: "Pascal",
@@ -71,7 +71,7 @@ const App = () => {
                     Cumque reiciendis eius autem eveniet mollitia, at asperiores
                     suscipit quae similique laboriosam iste minus placeat odit
                     velit quos, nulla architecto amet voluptates?
-      `
+      `,
     },
     {
       userName: "Lewis",
@@ -97,7 +97,7 @@ const App = () => {
                     Cumque reiciendis eius autem eveniet mollitia, at asperiores
                     suscipit quae similique laboriosam iste minus placeat odit
                     velit quos, nulla architecto amet voluptates?
-      `
+      `,
     },
     {
       userName: "Lyse",
@@ -123,7 +123,7 @@ const App = () => {
                     Cumque reiciendis eius autem eveniet mollitia, at asperiores
                     suscipit quae similique laboriosam iste minus placeat odit
                     velit quos, nulla architecto amet voluptates?
-      `
+      `,
     },
     {
       userName: "Amos",
@@ -144,7 +144,7 @@ const App = () => {
                     velit quos, nulla architecto amet voluptates?
       `,
       userImage: "https://randomuser.me/api/portraits/men/11.jpg",
-      userSkill: " "
+      userSkill: " ",
     },
     {
       userName: "Victory",
@@ -170,12 +170,9 @@ const App = () => {
                     Cumque reiciendis eius autem eveniet mollitia, at asperiores
                     suscipit quae similique laboriosam iste minus placeat odit
                     velit quos, nulla architecto amet voluptates?
-      `
-    }
+      `,
+    },
   ];
-  
-  
-
 
   return (
     <div>
@@ -184,17 +181,37 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="authors" element={<Authors />}>
-          
-            <Route path="lewis" element={<AuthorComponent userData={usersArray[2]} />} />
-            <Route path="harry" element={<AuthorComponent userData={usersArray[0]} />} />
-            <Route path="pascal" element={<AuthorComponent userData={usersArray[1]} />} />
-            <Route path="lyse" element={<AuthorComponent userData={usersArray[3]} />} />
-            <Route path="amos" element={<AuthorComponent userData={usersArray[4]} />} />
-            <Route path="victory" element={<AuthorComponent userData={usersArray[5]} />} />
+            <Route
+              path="lewis"
+              element={<AuthorComponent userData={usersArray[2]} />}
+            />
+            <Route
+              path="harry"
+              element={<AuthorComponent userData={usersArray[0]} />}
+            />
+            <Route
+              path="pascal"
+              element={<AuthorComponent userData={usersArray[1]} />}
+            />
+            <Route
+              path="lyse"
+              element={<AuthorComponent userData={usersArray[3]} />}
+            />
+            <Route
+              path="amos"
+              element={<AuthorComponent userData={usersArray[4]} />}
+            />
+            <Route
+              path="victory"
+              element={<AuthorComponent userData={usersArray[5]} />}
+            />
           </Route>
-          <Route path="/visualization" element={<Visualization />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/visuals" element={<Visuals />} />
+          <Route path="/visualspage" element={<VisualsHomePage />}>
+            <Route index element={<Visualization />} />
+            <Route path="visualization" element={<Visualization />} />
+            <Route path="work" element={<Work />} />
+            <Route path="visuals" element={<Visuals />} />
+          </Route>
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/sources" element={<Sources />} />
         </Routes>
