@@ -14,6 +14,8 @@ import LyseComponent from "./components/authorscomponents/LyseComponent";
 import AmosComponent from "./components/authorscomponents/AmosComponent";
 import PascalComponent from "./components/authorscomponents/PascalComponent";
 import VictoryComponent from "./components/authorscomponents/VictoryComponent";
+import Work from "./components/Work";
+import Visuals from "./components/visuals";
 
 const App = () => {
   return (
@@ -31,6 +33,8 @@ const App = () => {
             <Route path="victory" element={<VictoryComponent />} />
           </Route>
           <Route path="/visualization" element={<Visualization />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/visuals" element={<Visuals />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/sources" element={<Sources />} />
         </Routes>
