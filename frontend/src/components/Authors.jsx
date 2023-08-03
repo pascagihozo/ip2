@@ -4,6 +4,11 @@ import { Outlet } from "react-router-dom";
 import "./styles/authors.css";
 
 const Authors = () => {
+
+  
+
+
+
   return (
     <div className="bg-light">
       <section className="wrapper">
@@ -85,6 +90,8 @@ const Authors = () => {
       <section className="header d-flex justify-content-center align-items-center ">
         <h1 className="lead mt-4 p-3 text-dark fw-bold">About The Member</h1>
       </section>
+
+
       <Outlet />
     </div>
   );

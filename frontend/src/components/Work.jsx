@@ -23,6 +23,7 @@ function Work() {
       const response2 = await fetch(
         'https://stats.oecd.org/restsdmx/sdmx.ashx/GetDataStructure/AV_AN_WAGE'
       );
+
       const xmlData = await response2.text();
       const parser = new DOMParser();
       const xmlDoc = parser.parseFromString(xmlData, 'text/xml');
@@ -30,6 +31,7 @@ function Work() {
       const countries = Array.from(countryCodes).map(
         (code) => code.getElementsByTagName('Description')[0].textContent
       );
+      console.log("dddddd", countries)
       setData(countries.slice(0, 38)); // Only take the first ten countries
     } catch (error) {
       console.log(error);
@@ -50,7 +52,11 @@ function Work() {
   const pieChartData = chartData.map((entry) => ({
     name: entry.name,
     value: entry.rates,
-  }));
+  })).sort((a, b)=>b.value - a.value).filter((item, i)=>i<5);
+
+  useEffect(()=>{
+    console.log("DSKF", data)
+  }, [data])
 
   return (
     <div className='p-4'>

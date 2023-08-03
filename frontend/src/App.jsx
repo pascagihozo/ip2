@@ -16,8 +16,167 @@ import PascalComponent from "./components/authorscomponents/PascalComponent";
 import VictoryComponent from "./components/authorscomponents/VictoryComponent";
 import Work from "./components/Work";
 import Visuals from "./components/visuals";
+import AuthorComponent from "./components/authorscomponents/AuthorComponent";
 
 const App = () => {
+
+  const usersArray = [
+    {
+      userName: "Harry",
+      userBg: `
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates? Lorem ipsum
+                    dolor sit, amet consectetur adipisicing elit. Cumque
+                    reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates?
+      `,
+      userDescription: `
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates?
+      `,
+      userImage: "https://randomuser.me/api/portraits/men/11.jpg",
+      userSkill: `
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates?
+      `
+    },
+    {
+      userName: "Pascal",
+      userBg: `
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates? Lorem ipsum
+                    dolor sit, amet consectetur adipisicing elit. Cumque
+                    reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates?
+      `,
+      userDescription: `
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates?
+      `,
+      userImage: "https://randomuser.me/api/portraits/men/11.jpg",
+      userSkill: `
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates?
+      `
+    },
+    {
+      userName: "Lewis",
+      userBg: `
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates? Lorem ipsum
+                    dolor sit, amet consectetur adipisicing elit. Cumque
+                    reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates?
+      `,
+      userDescription: `
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates?
+      `,
+      userImage: "https://randomuser.me/api/portraits/men/11.jpg",
+      userSkill: `
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates?
+      `
+    },
+    {
+      userName: "Lyse",
+      userBg: `
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates? Lorem ipsum
+                    dolor sit, amet consectetur adipisicing elit. Cumque
+                    reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates?
+      `,
+      userDescription: `
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates?
+      `,
+      userImage: "https://randomuser.me/api/portraits/men/11.jpg",
+      userSkill: `
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates?
+      `
+    },
+    {
+      userName: "Amos",
+      userBg: `
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates? Lorem ipsum
+                    dolor sit, amet consectetur adipisicing elit. Cumque
+                    reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates?
+      `,
+      userDescription: `
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates?
+      `,
+      userImage: "https://randomuser.me/api/portraits/men/11.jpg",
+      userSkill: " "
+    },
+    {
+      userName: "Victory",
+      userBg: `
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates? Lorem ipsum
+                    dolor sit, amet consectetur adipisicing elit. Cumque
+                    reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates?
+      `,
+      userDescription: `
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates?
+      `,
+      userImage: "https://randomuser.me/api/portraits/men/11.jpg",
+      userSkill: `
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates?
+      `
+    }
+  ];
+  
+  
+
+
   return (
     <div>
       <Header />
@@ -25,12 +184,13 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="authors" element={<Authors />}>
-            <Route path="lewis" element={<LewisComponent />} />
-            <Route path="harry" element={<HarryComponent />} />
-            <Route path="pascal" element={<PascalComponent />} />
-            <Route path="lyse" element={<LyseComponent />} />
-            <Route path="amos" element={<AmosComponent />} />
-            <Route path="victory" element={<VictoryComponent />} />
+          
+            <Route path="lewis" element={<AuthorComponent userData={usersArray[2]} />} />
+            <Route path="harry" element={<AuthorComponent userData={usersArray[0]} />} />
+            <Route path="pascal" element={<AuthorComponent userData={usersArray[1]} />} />
+            <Route path="lyse" element={<AuthorComponent userData={usersArray[3]} />} />
+            <Route path="amos" element={<AuthorComponent userData={usersArray[4]} />} />
+            <Route path="victory" element={<AuthorComponent userData={usersArray[5]} />} />
           </Route>
           <Route path="/visualization" element={<Visualization />} />
           <Route path="/work" element={<Work />} />
