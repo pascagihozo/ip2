@@ -41,6 +41,7 @@ const Visualization = () => {
     const data = await getJobSearch(keyword, "chicago");
     setData(data);
     setIsLoading(false);
+    if(data) console.log(data);
   };
 
   return (
@@ -68,37 +69,41 @@ const Visualization = () => {
           <span className="visually-hidden">Loading...</span>
         </Spinner>
       )}
+
+      
       {/* Render the data here */}
-      {data?.hits?.map((item, index) => (
-        <div key={index}>
+      
+        <div>
           {/* Display the data from the fetched response */}
           <div class="table-responsive">
-  <table class="table table-striped table-bordered">
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">Job Title</th>
-        <th scope="col">Company</th>
-        <th scope="col">Location</th>
-        <th scope="col">Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>{item.title}</td>
-        <td>{item.company_name}</td>
-        <td>{item.location}</td>
-        <td>
-          <a class="btn btn-primary btn-sm" href="{item.link}" target="_blank" rel="noopener noreferrer">Apply</a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+            <table class="table table-striped table-bordered">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Job Title</th>
+                  <th scope="col">Company</th>
+                  <th scope="col">Location</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+              {data?.hits?.map((item, index) => (
+                <tr key={index}>
+                  <td>{item.title}</td>
+                  <td>{item.company_name}</td>
+                  <td>{item.location}</td>
+                  <td className="flex justify-center">
+                    <a class="btn btn-primary btn-sm" href="{item.link}" target="_blank" rel="noopener noreferrer">Apply</a>
+                  </td>
+                </tr>
+                ))}
+               
+              </tbody>
+            </table>
+        </div>
 
 
           {/* Replace 'someProperty' with the actual property name you want to display */}
         </div>
-      ))}
     </Container>
   );
 };
