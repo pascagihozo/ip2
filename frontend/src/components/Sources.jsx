@@ -8,11 +8,13 @@ const Sources = () => {
     <div className="vizual">
       <div className="pt-5 bg-light viz">
         <nav className="p-4 d-flex">
-          <NavLink className="nav-link me-4">Source of Utilized Data</NavLink>
-          <NavLink className="nav-link me-4">
+          <NavLink to="source1" className="nav-link me-4">
+            Source of Utilized Data
+          </NavLink>
+          <NavLink to="source2" className="nav-link me-4">
             Description of Data Content and Structure
           </NavLink>
-          <NavLink className="nav-link">
+          <NavLink to="source3" className="nav-link">
             API Access and Visualization Code Execution
           </NavLink>
         </nav>

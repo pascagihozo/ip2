@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom/dist";
 const Header = () => {
   return (
     <Navbar expand="lg" bg="dark" className="text-light" fixed="top">
-      <Container fluid className="p-2">
+      <Container fluid className="p-4">
         <Navbar.Brand className="text-light" href="/">
           Power6
         </Navbar.Brand>
