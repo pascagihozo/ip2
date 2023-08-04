@@ -15,7 +15,7 @@ import AmosComponent from "./components/authorscomponents/AmosComponent";
 import PascalComponent from "./components/authorscomponents/PascalComponent";
 import VictoryComponent from "./components/authorscomponents/VictoryComponent";
 import Work from "./components/Work";
-import Visuals from "./components/Visuals";
+// import Visuals from "./components/Visuals";
 import AuthorComponent from "./components/authorscomponents/AuthorComponent";
 import VisualsHomePage from "./components/VisualsHomePage";
 import Salary from "./components/Salary";

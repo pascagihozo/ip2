@@ -35,7 +35,7 @@ export const getJobSalaryData = async(job, loc) => {
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '3dc11da1d9msh23d507d320e1069p122fb3jsn25c997bbd15d',
+		'X-RapidAPI-Key': '38630138d4mshaa7083faf984de9p1a4a2cjsn616733164056',
 		'X-RapidAPI-Host': 'job-salary-data.p.rapidapi.com'
 	  }
 	};
