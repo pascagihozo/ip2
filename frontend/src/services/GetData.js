@@ -15,17 +15,35 @@ export const getJobSearch = async(search, location) => {
 const url = `https://indeed12.p.rapidapi.com/jobs/search?query=${search}&location=${location}`;
 const options = {
 	method: 'GET',
-	url: 'https://indeed12.p.rapidapi.com/job/b762b8d1132bd276',
 	headers: {
-	  'X-RapidAPI-Key': '89ee97ecbbmsh0706d84ea9467bfp12cd6ejsn57ad11fc74a7',
+	  'X-RapidAPI-Key': '3dc11da1d9msh23d507d320e1069p122fb3jsn25c997bbd15d',
 	  'X-RapidAPI-Host': 'indeed12.p.rapidapi.com'
-	}
+    }
   };
 
 try {
 	const response = await fetch(url, options);
 	const result = await response.json();
 	return result;
+} catch (error) {
+	console.error(error);
+}
+}
+
+export const getJobSalaryData = async(job, loc) => {
+	const url = `https://job-salary-data.p.rapidapi.com/job-salary?job_title=${job}&location=${loc}&radius=200`;
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '3dc11da1d9msh23d507d320e1069p122fb3jsn25c997bbd15d',
+		'X-RapidAPI-Host': 'job-salary-data.p.rapidapi.com'
+	  }
+	};
+
+try {
+	const response = await fetch(url, options);
+	const result = await response.json();
+	return result.data;
 } catch (error) {
 	console.error(error);
 }
