@@ -37,12 +37,7 @@ const AmosComponent = () => {
               <div className="col-md-12">
                 <div className="Skills mt-2 text-center">
                   <h1 className="p-3 fw-bold">Background Information</h1>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
-                    suscipit quae similique laboriosam iste minus placeat odit
-                    velit quos, nulla architecto amet voluptates?
-                  </p>
+                  <p>doom</p>
                 </div>
               </div>
             </div>
@@ -50,7 +45,7 @@ const AmosComponent = () => {
               <div className="col-md-12">
                 <div className="contribution mt-2 text-center">
                   <h1 className="p-3 fw-bold">Skills</h1>
-                  <p>
+                  <p className="bg-dark">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Cumque reiciendis eius autem eveniet mollitia, at asperiores
                     suscipit quae similique laboriosam iste minus placeat odit

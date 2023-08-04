@@ -4,11 +4,6 @@ import { Outlet } from "react-router-dom";
 import "./styles/authors.css";
 
 const Authors = () => {
-
-  
-
-
-
   return (
     <div className="bg-light">
       <section className="wrapper">
@@ -17,8 +12,9 @@ const Authors = () => {
             <NavLink to="lewis">
               <div className="Member">
                 <img
-                  src="https://randomuser.me/api/portraits/men/12.jpg"
+                  src="https://i.ibb.co/yRDsQWV/og.png"
                   className="rounded-circle mb-3"
+                  id="image"
                   alt=""
                 />
                 <h3 className="card-title mb-3 text-dark ml-auto">
@@ -29,8 +25,9 @@ const Authors = () => {
             <NavLink to="harry">
               <div className="Member">
                 <img
-                  src="https://randomuser.me/api/portraits/men/12.jpg"
+                  src="https://i.ibb.co/sPZHPm9/ss.png"
                   className="rounded-circle mb-3"
+                  id="image"
                   alt=""
                 />
                 <h3 className="card-title mb-3 text-dark ml-auto">
@@ -41,8 +38,9 @@ const Authors = () => {
             <NavLink to="lyse">
               <div className="Member">
                 <img
-                  src="https://randomuser.me/api/portraits/men/12.jpg"
+                  src="https://i.ibb.co/Pw7YFZK/lyse.png"
                   className="rounded-circle mb-3"
+                  id="image"
                   alt=""
                 />
                 <h3 className="card-title mb-3 text-dark ml-auto">
@@ -53,8 +51,9 @@ const Authors = () => {
             <NavLink to="amos">
               <div className="Member">
                 <img
-                  src="https://randomuser.me/api/portraits/men/12.jpg"
+                  src="https://i.ibb.co/fD71g7n/TOUL7996.jpg"
                   className="rounded-circle mb-3"
+                  id="image"
                   alt=""
                 />
                 <h3 className="card-title mb-3 text-dark ml-auto">
@@ -65,8 +64,9 @@ const Authors = () => {
             <NavLink to="pascal">
               <div className="Member">
                 <img
-                  src="https://randomuser.me/api/portraits/men/12.jpg"
+                  src="https://i.ibb.co/9s8JRBf/81709635.jpg"
                   className="rounded-circle mb-3"
+                  id="image"
                   alt=""
                 />
                 <h3 className="card-title mb-3 text-dark ml-auto">
@@ -77,22 +77,30 @@ const Authors = () => {
             <NavLink to="victory">
               <div className="Member">
                 <img
-                  src="https://randomuser.me/api/portraits/men/12.jpg"
+                  src="https://i.ibb.co/khqv8PF/Victory.jpg"
                   className="rounded-circle mb-3"
+                  id="image"
                   alt=""
                 />
-                <h3 className="card-title mb-3 text-dark ml-auto">Victory</h3>
+                <h3 className="card-title mb-3 text-dark ml-auto">
+                  Victory Friday
+                </h3>
               </div>
             </NavLink>
+          </div>
+          <div className="p-4">
+            <h1 className="lead">
+              Click the picture to view information about the member.
+            </h1>
           </div>
         </section>
       </section>
       <section className="header d-flex justify-content-center align-items-center ">
         <h1 className="lead mt-4 p-3 text-dark fw-bold">About The Member</h1>
       </section>
-
-
-      <Outlet />
+      <div className="outletdiv">
+        <Outlet />
+      </div>
     </div>
   );
 };
