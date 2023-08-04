@@ -68,7 +68,7 @@ const Visualization = () => {
           <Col xl={9} sm={12}>
             <input
               onChange={(e) => setKeyword(e.target.value)}
-              className="p-2 w-100 bg-white text-black"
+              className="p-2 w-100 bg-white border-1 text-black"
               type="text"
               placeholder="Enter job name and location"
             />

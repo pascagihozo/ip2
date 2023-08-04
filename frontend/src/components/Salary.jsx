@@ -85,7 +85,7 @@ const Salary = () => {
         onChange={(e) => setKeyword(e.target.value)}
         type="text" 
         className="p-1 mr-4 bg-light" 
-        placeholder="Enter job name  and location ex: developer, india" />
+        placeholder="Developer, india" />
         <Button onClick={handleSubmit} style={{ backgroundColor: "blue" }}>
             Search
         </Button>
