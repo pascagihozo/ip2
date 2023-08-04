@@ -80,6 +80,7 @@ const Salary = () => {
 
     return (
         <div className="mt-24">
+            <div className="items-center"><p>Search by "job position","country"</p></div>
         <div style={{ display: "flex", justifyContent: "center"}} className='m-4 w-100'>
         <input 
         onChange={(e) => setKeyword(e.target.value)}
