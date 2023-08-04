@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom/dist";
 
 const Header = () => {
   return (
-    <Navbar expand="lg" bg="dark" variant="dark" fixed="top">
+    <Navbar expand="lg" bg="primary" variant="dark" fixed="top">
       <Container fluid className="p-4">
         <Navbar.Brand href="#home">Power6</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
