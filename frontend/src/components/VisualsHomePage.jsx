@@ -19,7 +19,9 @@ const VisualsHomePage = () => {
           </NavLink>
         </nav>
       </div>
-      <Outlet />
+      <div className="vizoutlet">
+        <Outlet />
+      </div>
     </div>
   );
 };
