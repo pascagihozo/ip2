@@ -18,6 +18,7 @@ import Work from "./components/Work";
 import Visuals from "./components/Visuals";
 import AuthorComponent from "./components/authorscomponents/AuthorComponent";
 import VisualsHomePage from "./components/VisualsHomePage";
+import Salary from "./components/Salary";
 
 const App = () => {
   const usersArray = [
@@ -210,8 +211,9 @@ const App = () => {
             <Route index element={<Visualization />} />
             <Route path="visualization" element={<Visualization />} />
             <Route path="work" element={<Work />} />
-            <Route path="visuals" element={<Visuals />} />
+            <Route path="visuals" element={<Salary />} />
           </Route>
+          {/* <Route path="/salary" element={<Salary />} /> */}
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/sources" element={<Sources />} />
         </Routes>
