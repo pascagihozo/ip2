@@ -19,6 +19,9 @@ import Work from "./components/Work";
 import AuthorComponent from "./components/authorscomponents/AuthorComponent";
 import VisualsHomePage from "./components/VisualsHomePage";
 import Salary from "./components/Salary";
+import Source1 from "./components/source1";
+import Source2 from "./components/source2";
+import Source3 from "./components/source3";
 
 const App = () => {
   const usersArray = [
@@ -146,8 +149,13 @@ const App = () => {
             <Route path="visuals" element={<Salary />} />
           </Route>
           {/* <Route path="/salary" element={<Salary />} /> */}
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path="/sources" element={<Sources />} />
+
+          <Route path="/sources" element={<Sources />}>
+            <Route index element={<Source1 />} />
+            <Route path="source1" element={<Source1 />} />
+            <Route path="source2" element={<Source2 />} />
+            <Route path="source3" element={<Source3 />} />
+          </Route>
         </Routes>
       </Layout>
       <Footer />
