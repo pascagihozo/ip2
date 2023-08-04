@@ -6,7 +6,7 @@ const Home = () => {
     <div className="wrapper">
       <section
         id="homebody"
-        className="text-light p-5 pt-lg-3 text-center text-sm-start"
+        className="text-light p-5 text-center text-sm-start"
       ></section>
       <section id="learn" className="p-5">
         <div className="container">
