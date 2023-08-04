@@ -5,3 +5,15 @@
   background-size: cover;
   background-position: center;
 }
+
+#min-height-card {
+  height: 400px;
+}
+/* home.css */
+
+#image {
+  width: 120px;
+  max-width: 100%;
+  height: 120px;
+  max-height: 200px;
+}
