@@ -19,9 +19,9 @@ import Work from "./components/Work";
 import AuthorComponent from "./components/authorscomponents/AuthorComponent";
 import VisualsHomePage from "./components/VisualsHomePage";
 import Salary from "./components/Salary";
-import Source1 from "./components/source1";
-import Source2 from "./components/source2";
-import Source3 from "./components/source3";
+import Source1 from "./components/Source1";
+import Source2 from "./components/Source2";
+import Source3 from "./components/Source3";
 
 const App = () => {
   const usersArray = [
